@@ -29,22 +29,27 @@ import statistics  # provides mean(), stdev() and more....
 # declare a boolean variable (has a value True or False)
 # TODO: Add another or replace this with your own boolean variable
 has_international_clients: bool = True
+is_publicly_traded: bool = True
 
 # declare an integer variable 
 # TODO: Add or replace this with your own integer variable
 years_in_operation: int = 10
+number_of_locations: int = 6
 
 # declare a floating point variable
 # TODO: Add or replace this with your own floating point variable
 average_client_satisfaction: float = 4.7
+average_location_net_weekly_income: float = '$8,000'
 
 # declare a list of strings
 # TODO: Add or replace this with your own list  
 skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
+tools_available: list = ["SQL", "GitHub", "Python"]
 
 # declare a list of numbers so we can illustrate statistics skills
 # TODO: Add or replace this with your own numeric list  
 client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
+location_net_weekly_income: list = ['$6,000, $9,500, $7,500, $8,500, $6,500, $10,000']
 
 # Calculate basic statistics using built-in Python functions and the statistics module
 # TODO: Replace these variable names with the variable name of your own numeric list
@@ -61,9 +66,13 @@ byline: str = f"""
 Stellar Analytics: Delivering Professional Insights
 ---------------------------------------------------------
 Has International Clients:  {has_international_clients}
+Is Publicly Traded:         {is_publicly_traded}
 Years in Operation:         {years_in_operation}
+Number of Locations:        {number_of_locations}
 Skills Offered:             {skills_offered}
+Tools Available:            {tools_available}
 Client Satisfaction Scores: {client_satisfaction_scores}
+Location Net Weekly Income: {location_net_weekly_income}
 Minimum Satisfaction Score: {min_score}
 Maximum Satisfaction Score: {max_score}
 Mean Satisfaction Score: {mean_score:.2f}
