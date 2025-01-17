@@ -67,7 +67,7 @@ stdev_income: float = statistics.stdev(location_net_weekly_income)
 # TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
-Stellar Analytics: Delivering Professional Insights
+Wilcox Analytics: Delivering Professional Insights
 ---------------------------------------------------------
 Has International Clients:  {has_international_clients}
 Is Publicly Traded:         {is_publicly_traded}
@@ -76,15 +76,15 @@ Number of Locations:        {number_of_locations}
 Skills Offered:             {skills_offered}
 Tools Available:            {tools_available}
 Client Satisfaction Scores: {client_satisfaction_scores}
-Location Net Weekly Income: {location_net_weekly_income}
-Minimum Satisfaction Score: {min_score}
-Minimum Location Weekly Income: {min_weekly_location_income}
-Maximum Satisfaction Score: {max_score}
-Maximum Location Weekly Income: {max_weekly_location_income}
-Mean Satisfaction Score: {mean_score:.2f}
-Mean Weekly Income: {mean_income}
+Location Weekly Income in Dollars: {location_net_weekly_income}
+Minimum Satisfaction Score:        {min_score}
+Minimum Location Weekly Income:    ${min_weekly_location_income}
+Maximum Satisfaction Score:        {max_score}
+Maximum Location Weekly Income:    ${max_weekly_location_income}
+Mean Satisfaction Score:           {mean_score:.2f}
+Mean Weekly Income:                ${mean_income}
 Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
-Standard Deviation of Weekly Income: {stdev_income:.2f}
+Standard Deviation of Weekly Income:       ${stdev_income:.2f}
 """
 
 #####################################
