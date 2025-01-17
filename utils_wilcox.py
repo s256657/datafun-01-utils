@@ -49,14 +49,18 @@ tools_available: list = ["SQL", "GitHub", "Python"]
 # declare a list of numbers so we can illustrate statistics skills
 # TODO: Add or replace this with your own numeric list  
 client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
-location_net_weekly_income: list = ['$6,000, $9,500, $7,500, $8,500, $6,500, $10,000']
+location_net_weekly_income: list = [6000, 9500, 7500, 8500, 6500, 10000]
 
 # Calculate basic statistics using built-in Python functions and the statistics module
 # TODO: Replace these variable names with the variable name of your own numeric list
 min_score: float = min(client_satisfaction_scores)  
+min_weekly_location_income: float = min(location_net_weekly_income)
 max_score: float = max(client_satisfaction_scores)  
+max_weekly_location_income: float = max(location_net_weekly_income)
 mean_score: float = statistics.mean(client_satisfaction_scores)  
+mean_income: float = statistics.mean(location_net_weekly_income)
 stdev_score: float = statistics.stdev(client_satisfaction_scores)
+stdev_income: float = statistics.stdev(location_net_weekly_income)
 
 # Use a Python formatted string (f-string) to show information
 # TODO: Modify the text in the byline to fit your information
@@ -74,9 +78,13 @@ Tools Available:            {tools_available}
 Client Satisfaction Scores: {client_satisfaction_scores}
 Location Net Weekly Income: {location_net_weekly_income}
 Minimum Satisfaction Score: {min_score}
+Minimum Location Weekly Income: {min_weekly_location_income}
 Maximum Satisfaction Score: {max_score}
+Maximum Location Weekly Income: {max_weekly_location_income}
 Mean Satisfaction Score: {mean_score:.2f}
+Mean Weekly Income: {mean_income}
 Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
+Standard Deviation of Weekly Income: {stdev_income:.2f}
 """
 
 #####################################
